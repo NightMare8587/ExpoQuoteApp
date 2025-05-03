@@ -1,22 +1,24 @@
 {
   "expo": {
-    "name": "QuoteApp",
-    "slug": "QuoteApp",
+    "name": "YourQuoteApp",
+    "slug": "YourQuoteApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/ic_launcher-web.png",
     "scheme": "quoteapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.consumers.QuoteApp"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/ic_launcher-web.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.consumers.QuoteApp"
     },
     "web": {
       "bundler": "metro",
@@ -28,7 +30,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/ic_launcher-web.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -37,6 +39,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b552d785-b4a3-4e9a-ab59-dbc070b6f97f"
+      }
     }
   }
 }
